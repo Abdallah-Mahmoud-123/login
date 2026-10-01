@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    transition: 1s;
     box-shadow: 10px 10px 15px #08223148, -10px -10px 15px #ffffff79;
 }
 
@@ -31,7 +32,12 @@ body {
     outline: none;
     border-radius: 20px;
     background-color: #c8c7ee;
+    transition: 1s;
     box-shadow: 10px 10px 15px #08223148, -10px -10px 15px #ffffff79;
+}
+
+.container input:focus {
+    box-shadow: 10px 10px 15px #082231b2, -10px -10px 15px #ffffffee;
 }
 
 .container button {
@@ -46,14 +52,34 @@ body {
     background-color: #c8c7ee;
     box-shadow: 10px 10px 15px #08223148, -10px -10px 15px #ffffff79;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .container button:hover {
-    transform: translateY(-1px);
+        box-shadow: 10px 10px 15px #082231b2, -10px -10px 15px #ffffffee;
+
 }
 
 .container button:active {
-    box-shadow: inset 10px 10px 10px #05151f77, inset -10px -10px 10px #ffffff;
+    transform: translateY(1px);
+    box-shadow: 10px 10px 10px #05151f, -10px -10px 10px #ffffff;
 
+}
+
+.container a {
+    text-decoration: none;
+    color: #4d4d50;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.container a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.create_acount_forgot_password {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
 }

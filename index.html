@@ -1,17 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Login</h2>
-        <input type="text" placeholder="Name" >
-        <input type="password" placeholder="Password">
-        <button>Sign In</button>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login</h2>
+            <input id="name" type="text" placeholder="Name" />
+            <input type="password" placeholder="Password" />
+            <div class="create_acount_forgot_password">
+            <a onclick="forgot_password()" href="#forgot_password">Forgot Password?</a>
+            <a onclick="create_account()" href="#create_account">Create Account?</a>
+            </div>
+            <button>Sign In</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
